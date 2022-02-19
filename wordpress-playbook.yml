@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  become: yes
+
+  tasks:
+    - name: "Run docker-compose up -d"
+      shell: docker-compose up -d
